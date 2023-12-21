@@ -1,4 +1,4 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+THE MET landing is the site landing for the museum. I used such technologies as HTML/CSS, JS, CSS Preprocessing SASS, and BEM methodology. Besides I employed responsive design principles to ensure the museum page looks good and functions well across various devices and screen sizes, and added interactive elements. The landing uses semantic landing so is adaptive to screnreaders.
+
+You can see my project by clicking on DEMO LINK.
+[DEMO LINK](\https://sofiatryasko.github.io/THE-MET-landing/)
