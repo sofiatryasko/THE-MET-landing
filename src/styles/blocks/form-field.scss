@@ -15,19 +15,28 @@
     outline: none;
   }
 
-  &:hover {
-    border-color: #d5d7de;
-    outline: none;
-  }
-
-  &:focus {
-    border-color: #161616;
-    outline: none;
-  }
-
   &--textarea {
     resize: none;
     height: 144px;
     padding: 14px 16px;
   }
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover {
+  border-color: #d5d7de;
+  outline: none;
+}
+input:-webkit-autofill:focus {
+  border-color:  #161616;
+  outline: none;
+}
+textarea:-webkit-autofill:hover {
+  border-color: #d5d7de;
+  outline: none;
+}
+textarea:-webkit-autofill:focus {
+  border-color:  #161616;
+  outline: none;
+}
+
