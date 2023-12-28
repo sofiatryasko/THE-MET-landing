@@ -7,6 +7,7 @@
   width: 100%;
   padding: 14px 16px;
   outline: none;
+  box-shadow: none;
 
   &::placeholder {
     color: #7e7e83;
@@ -23,20 +24,16 @@
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover {
+textarea:-webkit-autofill {
+  color: #161616;
   border-color: #d5d7de;
-  outline: none;
-}
-input:-webkit-autofill:focus {
-  border-color:  #161616;
-  outline: none;
-}
-textarea:-webkit-autofill:hover {
-  border-color: #d5d7de;
-  outline: none;
-}
-textarea:-webkit-autofill:focus {
-  border-color:  #161616;
   outline: none;
 }
 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+.form-field:focus {
+  color:#161616;
+  border-color: #161616;
+  outline: none;
+}

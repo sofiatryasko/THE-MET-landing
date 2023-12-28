@@ -94,10 +94,11 @@
     text-transform: uppercase;
     text-align: center;
 
+    width: fit-content;
     position: absolute;
     top: 40px;
     right: 340px;
-    margin-right: 16px;
+    padding: 4px 16px 4px 4px;
 
   }
 
@@ -120,6 +121,33 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &::after {
+      transform-origin: 0 0;
+      top: 54px;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background-color: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+
+      transform: translateX(50%)
+    }
+
+    &:hover:after {
+      width: 50%;
+      left: 0;
+    }
+  }
+
+  &__contact-link--2 {
+    &::after {
+      top: 115px;
+    }
+
   }
 
   &__menu-opener {
